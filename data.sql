@@ -40,6 +40,26 @@ select name, date_of_birth, neutered, escape_attempts, species  from animals;
 update set weight_kg = weight_kg *-1 where weight_kg < 0;
 commit;
 
+/* Milestone(3)*/
+insert into owners (full_name, age) values('same smith', 34);
+insert into owners (full_name, age) values ('Jennifer Orwell', 19);
+insert into owners (full_name, age) values ('Bob', 45);
+insert into owners (full_name, age) values ('Melody Pond ', 77);
+insert into owners (full_name, age) values ('Dean Winchester', 14);
+insert into owners (full_name, age) values ('Jodie Whittaker', 38);
+
+insert into species (name) values('Pokemon');
+insert into species (name) values('Digimon');
+update animals set species_id = 'Pokemon'
+update animals set species_id = 2 where name like'%mon';
+update animals set species_id = 1 where species_id is null ;
+
+update animals set owner_id = 1 where name = 'Agumon';
+update animals set owner_id = 2 where name in ('Gabumon','Pikachu');
+update animals set owner_id = 3 where name = 'Plantmon','Devimon';
+update animals set owner_id= 4 where name in ('Charmander', 'Squirtle','Blossom');
+update animals set owner_id = 5 where name in ('Angemon','Boarmon');
+
 
 
 
