@@ -60,6 +60,43 @@ update animals set owner_id = 3 where name = 'Plantmon','Devimon';
 update animals set owner_id= 4 where name in ('Charmander', 'Squirtle','Blossom');
 update animals set owner_id = 5 where name in ('Angemon','Boarmon');
 
+/* Milestone(4)*/
+insert into vets(name, age, date_of_graduation) values ('William Tatcher', 45, 'apr 23,2000');
+insert into vets(name, age, date_of_graduation) values('Maisy Smith', 26, 'jan 17,2019');
+insert into vets(name, age, date_of_graduation) values('Stephanie Mendez', 64, 'may 4,1981');
+insert into vets(name, age, date_of_graduation) values('Jack Harkness', 38, 'jun 8,2008');
+
+insert into specializations values(1,1);
+insert into specializations values(2,2);
+insert into specializations values(2,4);
+
+insert into visits values (1,4,'may 24, 2020');
+insert into visits values (3,4,'jul 22, 2020');
+insert into visits values (4,5,'feb 2, 2021');
+insert into visits values (2,6,'jan 5, 2020');
+insert into visits values (2,6,'mar 8,2020');
+insert into visits values (2,6,'may 14, 2020');
+insert into visits values (3,7,'may 4, 2021');
+insert into visits values (4,8,'feb 24, 2021');
+insert into visits values (2,9,'dec 21, 2019');
+insert into visits values (1,9,'aug 10,2020');
+insert into visits values (2,9,'apr 7, 2021');
+insert into visits values (3,10,'sep 29, 2019');
+insert into visits values (4,11,'oct 3, 2020');
+insert into visits values (4,11,'nov 4, 2020');
+insert into visits values (2,12,'jan 24, 2019');
+insert into visits values (2,12,'may 15, 2019');
+insert into visits values (2,12,'feb 27, 2020');
+insert into visits values (2,12,'aug 3, 2020');
+insert into visits values (3,13,'may 24, 2020');
+insert into visits values (1,13,'jan 11, 2021');
+
+
+
+
+
+
+
 
 
 
