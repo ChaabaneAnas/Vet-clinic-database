@@ -70,3 +70,8 @@ join species s on s.id = species_id
 where v.name = 'Maisy Smith'
 group by specie_name, v.name
 order by count(*) desc limit 1;
+
+/*MileStone 5*/
+CREATE INDEX animal_id_index on visits(animal_id);
+CREATE INDEX vet_id_index on visits(vet_id);
+CREATE INDEX email_id on owners(email);
